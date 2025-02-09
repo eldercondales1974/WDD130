@@ -1,4 +1,4 @@
-#content {
+#content {   
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -7,12 +7,14 @@ nav a {
     margin: 0 auto;
     color: black;
     text-decoration: none;
+    padding: 35px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
 }
 .button-box {
     text-align: center;
+    display: block;
 }
 main section {
     text-align: center;
@@ -21,7 +23,9 @@ main section {
     height: 725px;
 }
 body {
-    background-color: rgb(red, green, blue);
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
 }
 header {
     background-color: white;
@@ -31,10 +35,12 @@ nav a:hover {
     color: red;
     text-decoration: underline;
 }
-.book, .join {
+/*.book, .join {
     background-color: azure;
     text-decoration: none;
-}
+    padding: 15px 30px;
+    text-align: center;
+}*/
 .book:hover, .join:hover {
     background-color: yellow;
     color: red;
@@ -45,27 +51,38 @@ nav a:hover {
 }
 .msg {
     background-color: bisque;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer {
     background-color: steelblue;
 }
 .home-title {
     color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    margin-top: 10px;
+    text-align: center;
 }
 h4 {
     color: black;
 }
-.book, .join {
+/*.book, .join {
     color: brown;
-}
+    margin-top: 50px;
+    border-radius: 5px;
+}*/
 .msg h2 {
     color: black;
+    font-family:'Courier New', Courier, monospace;
 }
 .msg p {
     color: brown;
+    padding-bottom: 15px;
 }
 footer {
     color: black;
+    padding: 25px 50px;
 }
 footer a {
     color: blue;
@@ -79,6 +96,7 @@ footer p {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 footer p a:hover {
     text-decoration: underline;
@@ -87,3 +105,27 @@ footer p a:hover {
     width: 100%;
     margin: 25px auto;
 }
+h2 {
+    margin: 0;
+}
+#link-logo {
+    padding-top: 5px;
+}
+footer .social  img {
+    padding-top: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+main section img {
+    box-sizing: border-box;
+}
+/*.book {
+    text-align: center;
+    margin: 100% auto;
+    padding: 25px 50px;
+
+}*/
