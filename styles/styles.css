@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: steelblue;
     margin: 0;
 }
 nav {
@@ -8,56 +8,53 @@ nav {
 }
 a {
     font-size: 1.5em;
-    color: white;
-    padding: 25px;
+    
 }
 h1 {
-    color: black;
-    text-align: center;
+    color: white;
     font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
     margin: 25px 0;
     font-size: 64px;
     z-index: 1;
+    text-align: center;
 }
 img {
-    width: 25%;
-    height: 25%;
-    /*display: block;*/
-    margin: 50px;
-    border: 4px solid white;
+   width: 30%;
+   display: block;
+   margin: 0 auto;
 }
 p {
-    width: 80%;
-    padding: 30px;
+    width: 50%;
 }
 /*footer {
     background-color: steelblue;
     color: white;
 }*/
-.main-para {
+/*.main-para {
     font-size: 1.5em;
     line-height: 1.5em;
-}
+}*/
 main p {
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
     text-align: center;
+    color: black;
 }
 #active {
     background-color: white;
     color: steelblue;
 }
-/*nav, footer {
+nav, footer {
     text-align: center;
     background-color: steelblue;
     color: brown;
-}*/
-/*footer p {
+}
+footer p {
     font-size: 20px;
     margin: 20px auto;
     color: black;
     padding: 25px;*
-}*/
+}
 a:hover {
     background-color: white;
     color: steelblue;
@@ -72,11 +69,15 @@ a:hover {
 h1:hover {
     color: black;
 }
-#imgsolo {
-    width: 80%;
-    margin: 0 auto;
-}
+
+
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+/** {
+    border: 2px solid blue;
+}*/
+h2, h3 {
+    text-align: center;
 }
