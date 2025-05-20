@@ -1,83 +1,31 @@
 body {
-    background-color: steelblue;
-    margin: 0;
-}
-nav {
-    background-color: steelblue;
-    padding: 25px;
-}
-a {
-    font-size: 1.5em;
-    
-}
-h1 {
-    color: white;
-    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
-    margin: 25px 0;
-    font-size: 64px;
-    z-index: 1;
+    max-width: 1600px;
     text-align: center;
+    margin: auto 0;
 }
-img {
-   width: 30%;
-   display: block;
-   margin: 0 auto;
+.circles {
+    margin: auto 50px;
+ /*   padding: 10px;*/
+    display: block;
+    /*border: 5px solid black;*/
+    height: 400px;
 }
-p {
-    width: 50%;
+#background {
+    background-color: gray;
+    margin: auto 50px;
+    /*padding: 10px;*/
+    display: block;
+    /*border: 5px solid black;*/
+    height: 250px;
+    width: 82%;
 }
-/*footer {
-    background-color: steelblue;
-    color: white;
+.images {
+   margin: 70px 50px;
+   height: 200px;
+   width: 200px;
+   border: 5px solid black;
+   border-radius: 50%;
+}
+/**{
+    border: solid black;
 }*/
-/*.main-para {
-    font-size: 1.5em;
-    line-height: 1.5em;
-}*/
-main p {
-    width: 80%;
-    margin: 50px auto;
-    text-align: center;
-    color: black;
-}
-#active {
-    background-color: white;
-    color: steelblue;
-}
-nav, footer {
-    text-align: center;
-    background-color: steelblue;
-    color: brown;
-}
-footer p {
-    font-size: 20px;
-    margin: 20px auto;
-    color: black;
-    padding: 25px;*
-}
-a:hover {
-    background-color: white;
-    color: steelblue;
-}
-.parra1 {
-    color: white;
-}
-.parraresto {
-    text-align: left;
-    
-}
-h1:hover {
-    color: black;
-}
-
-
-.home-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-/** {
-    border: 2px solid blue;
-}*/
-h2, h3 {
-    text-align: center;
-}
