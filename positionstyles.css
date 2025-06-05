@@ -43,7 +43,7 @@
   background-color: red; 
   top: 0;
   left: 0;
-  z-index: 4;
+  /*z-index: 4;*/
   position: absolute;
 } 
 .green2 { 
@@ -52,7 +52,7 @@
   background-color: green;
   top: 40px;
   left: 40px;
-  z-index: 3;
+  z-index: 2;
   position: absolute;
 } 
 .yellow2 {
@@ -62,7 +62,7 @@
   top: 80px;
   left: 80px;
   position: absolute; 
-  z-index: 2;
+  z-index: 3;
 } 
 .blue2 {
   width: 100px; 
@@ -71,6 +71,7 @@
   top: 120px;
   left: 120px;
   position: absolute;
+  z-index: 4;
 } 
 /* Activity 3 styles */ 
 .content3 {
