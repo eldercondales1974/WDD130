@@ -192,6 +192,25 @@ nav {
     grid-row: 6/7;
     box-shadow: 5px 5px 10px #6f7364;
 }
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+}
+.river-top {
+    text-align: center;
+}
+.border-image {
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+}
+.wide {
+    width: 100%;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
