@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        body {
+            text-align: center;
+        }
+
+        form {
+            display: inline-block;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+
+        p + p {
+            margin-top: 1em;
+        }
+
+        label {
+            display: inline-block;
+            min-width: 90px;
+            text-align: right;
+        }
+
+        input, textarea {
+            font: 1em sans-serif;
+            width: 300px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+        }
+
+        input:focus, textarea:focus {
+            outline-style: solid;
+            outline-color: #000;
+        }
+
+        textarea {
+            vertical-align: top;
+            height: 5em;
+        }
+
+        .button {
+            margin-left: 0.5em;
+        }
+    </style>
+</head>
+<body id="resolution">
+    <!--<main class="home-grid">-->
+    <div id="content">
+  <header>
+    <a id="logo-link-tsr" href="index.html"><img src="images/tsrlogo.png" alt="Logo Spread Talent"></a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="painting.html">Painting</a>
+          <a href="cubing.html">Cubing</a>
+          <a href="contactus.html">Contact Us</a>
+        </nav>
+          <img src="images/gan.jpg" alt="GAN">
+          <p>The Rubik's Cube, a 3D combination puzzle, was invented in 1974 by Hungarian architect and professor Ernő Rubik 1. Initially called the "Magic Cube," it was designed to help students understand three-dimensional geometry </p>
+        </div>
+        <div>
+          <img src="images/rsz_street.jpg" alt="rsz_street">
+          <p>Art is a broad and diverse field that encompasses various forms of creative expression. At its core, art involves the conscious use of skill and imagination to create visual, auditory, or performative works that can be appreciated for their beauty, emotional power, or intellectual depth</p>
+        </div>
+        <div>
+          <img src="images/ladyinleather.jpg" alt="ladyinleather">
+          <p>Talent is a natural ability or aptitude that allows someone to excel in a particular area, often without extensive training. It can manifest in various forms, such as artistic, athletic, musical, or intellectual abilities</p>
+        </div>
+      </div>
+ </header>
+ <main class="home-grid">
+    <div id="feedback"></div>
+    <form action="https://eldercondales1974.github.io/WDD130/wwr/index.html" method="post">
+    <p>
+        <label for="name">Name (4 to 12 characters):</label>
+        <input type="text" name="name" id="name" required minlength="4" maxlength="22" size="40" />
+            <p>           
+                <label for="email">Enter your e-mail:</label>
+                <input type="email" id="email" pattern="*@*.com" size="60" required/>    
+            </p>
+        </p>
+
+        <p>
+            <label for="story">Your comment:</label>
+            <textarea name="story" id="story" rows="20" cols="80"></textarea>
+        </p>
+        
+        
+        <p class="button">
+         <button type="submit">Submit your message</button>
+        </p>
+     </form> 
+       
+    </main>
+    <footer>
+        <p>Spread Talent &copy; 2025 - Alexandre Condales</p>
+        <p><a href="site-plan.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https//instagram.com">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+  <!--</header> --> 
+    </div>
+    <script>
+       // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    }); 
+    </script>
+</body>
+</html>

@@ -27,6 +27,51 @@ Fonts are separated by a | */
   --nav-hover-link-color: white;
   --nav-hover-background-color: #003366;
 }
+#logo_link-tsr {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+#content {
+    width: 1600px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+footer {
+    margin-top: 100px;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer p,  a:hover {
+    text-decoration: none;
+}
+footer p {
+    font-size: 1em;
+}
+footer a:hover {
+    background-color: #2ba0c1;
+}
+.home-grid-tsr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.gan-card {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.street-card {
+  grid-column: 5/7;
+  grid-row: 2/3;
+}
+.lady-card {
+  grid-column: 8/10;
+  grid-row: 2/3;
+}
+.card-img {
+  width: 100%;
+}
 
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
