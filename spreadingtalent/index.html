@@ -7,8 +7,8 @@
     <title>Spread Talent</title>
     <link type="text/css" rel="stylesheet" href="styles/site-plan.css">
     <style>
-      
-    </style>
+
+</style>
   </head>
 
   <body>
@@ -21,11 +21,44 @@
           <a href="cubing.html">Cubing</a>
           <a href="contactus.html">Contact Us</a>
         </nav>
-    </header>    
-          <div id="background"><img class="competition-img" src="images/rsz_competition.png" alt="competition"></div>
+    </header>
+          <!-- Slideshow container -->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/competition.PNG" style="width:100%">
+  <div class="text">Likewise Sport</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/rsz_1rsz_rsz_1rsz_rsz_fruits.jpg" style="width:100%">
+  <div class="text">Art</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/rsz_1rsz_rsz_1rsz_sky-cube.jpg" style="width:100%">
+  <div class="text">Rubik a Culture</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    
+          <!--<div id="background"><img class="competition-img" src="images/rsz_competition.png" alt="competition"></div>-->
     <main class="home-grid-tsr">
       <div class="gan-card">
-            <img class="card-img" src="images/rsz_sky-cube.jpg" alt="gan">
+            <img class="card-img" src="images/3X3.jpg" alt="gan">
             <p class="card-paragraph">The Rubik's Cube, a 3D combination puzzle, was invented in 1974 by Hungarian architect and professor Ernő Rubik 1. Initially called the "Magic Cube," it was designed to help students understand three-dimensional geometry </p>
       </div>
         <div class="street-card">
@@ -55,7 +88,36 @@
             </a>
         </div>        
      </footer>
+     <script>
+      let slideIndex = 1;
+showSlides(slideIndex);
 
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+     </script>
   </body>
 
 </html>
