@@ -5,55 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link type="text/css" rel="stylesheet" href="styles/site-plan.css">
+    <style>
+        
+    </style>
 
 </head>
 <body>
-    <div id="content-str">
+    <div id="content-str-cubing">
         <header>
         <a id="logo-link-tsr" href="index.html"><img src="images/rsz_tsrlogo.png" alt="Logo Spread Talent"></a>
           <nav>
           <a href="index.html">Home</a>
           <a href="painting.html">Painting</a>
           <a href="cubing.html">Cubing</a>
-          <a href="contactus.html">Contact Us</a>
+          <!--<a href="contactus.html">Contact Us</a>-->
         </nav>
-          <img src="images/rsz_gan.jpg" alt="GAN">
-          <p>The Rubik's Cube, a 3D combination puzzle, was invented in 1974 by Hungarian architect and professor Ernő Rubik 1. Initially called the "Magic Cube," it was designed to help students understand three-dimensional geometry </p>
-        </div>
-        <div>
-          <img src="images/rsz_white-cube.jpg" alt="white-cubet">
-          <p>Art is a broad and diverse field that encompasses various forms of creative expression. At its core, art involves the conscious use of skill and imagination to create visual, auditory, or performative works that can be appreciated for their beauty, emotional power, or intellectual depth</p>
-        </div>
-        <div>
-          <img src="images/rsz_sky-cube.jpg" alt="sky-cube">
-          <p>Talent is a natural ability or aptitude that allows someone to excel in a particular area, often without extensive training. It can manifest in various forms, such as artistic, athletic, musical, or intellectual abilities</p>
-        </div>
-      </div>
-    </header>
-         <div>
-            <div>
-        <!--<div id="hero-box">
-            <img src="images/gan.jpg" alt="gan">
-        </div>-->
-        <!--<div>
-            <img id="hero-img" src="images/rsz_rubik3x3.jpg" alt="Rubik">
-        </div>-->
-        <div>
-            <img id="hero-img" src="images/3X3.jpg" alt="Pro">
-        </div>
-    <section id="hero-msg">
-        <h1 class="home-title">What you can achieve</h1>
-        <h4>It is possible</h4>
-        <div class="button-box">
-            <a class="book" href="contactus.html">Gallery</a>
-        </div>
-        
-    </section>
-         </div>
-
-
-
+        </header>
     </div>
+         <!-- Slideshow container -->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/competition.PNG" style="width:100%">
+  <div class="text">Likewise Sport</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/rsz_1rsz_rsz_1rsz_sky-cube.jpg" style="width:100%">
+  <div class="text">Cubik</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/rsz_1rsz_rsz_1rsz_sky-cube.jpg" style="width:100%">
+  <div class="text">Rubik a Culture</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+
+
+        
+        <main>
+          <div class="container_cubing">
+  <div class="image-section">
+    <div class="image-placeholder small"><img src="images/rsz_1rsz_sky-cube.jpg" alt="Cubik"></div>
+    <p class="text-below-image">A good try cubbing</p>
+  </div>
+  <div class="main-content">
+      <div class="image-placeholder-latge"></div>
+      <div class="separator"></div>
+      <p class="text-bottom-right"></p>
+  </div>
+</div>
+          <!--<div>
+            <p class="come-over">If you like painting, come over here and try. Show us what you know!</p>
+          </div>
+    <div>
+          <section class="container-fruits">
+              <div>
+                <p class="paragraph-section">Art manifests in diverse ways, each offering unique avenues for expression and connection. Visual arts, such as painting, sculpture, and photography, capture moments and emotions through color, form, and composition. Performing arts, including music, dance, and theater, bring stories and feelings to life through movement, sound, and performance. Literary arts, encompassing poetry, prose, and drama, weave words into narratives that resonate with readers and listeners. Additionally, digital arts leverage technology to create innovative and interactive experiences. Each form of art, whether traditional or contemporary, serves as a powerful medium for artists to share their perspectives, challenge norms, and inspire audiences worldwide.</p>
+              </div>
+              <div>
+                  <img src="images/rsz_1rsz_fruits.jpg" alt="art">
+              </div>
+          </section>
+    <section class="container-fruits">
+      <div>
+        <p class="paragraph-section">Art encompasses a wide range of forms, each with its own unique characteristics and methods of expression. Visual arts include painting, drawing, sculpture, and photography, where artists use materials like paint, clay, and cameras to create images and objects that can be seen and touched. Performing arts such as music, dance, and theater involve live performances that engage audiences through sound, movement, and storytelling. Literary arts cover poetry, novels, and plays, using written words to convey stories, emotions, and ideas. Digital arts leverage technology to produce interactive and multimedia experiences, including digital painting, animation, and virtual reality. Each type of art offers distinct ways for artists to express their creativity and for audiences to experience and interpret their work.</p>
+        <p>Visit a gallery in Venezuela</p>
+        <p>Hit the botton below:</p>
+        <button> <a href="https://es.wikipedia.org/wiki/Galer%C3%ADa_de_Arte_Nacional_(Caracas)" target="_blank">Art Gallery</a></button>
+      </div>
+      <div>
+        <img src="images/rsz_face.jpg" alt="Face">
+      </div>-->
+    </main>
     <footer>
         <p>Spread Talent &copy; 2025 - Alexandre Condales</p>
         <p><a href="site-plan.html">Site Plan</a></p>
@@ -70,5 +109,35 @@
             </a>
         </div>
     </footer>
+    <script>
+      let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+     </script>
 </body>
 </html>
